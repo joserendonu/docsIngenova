@@ -77,3 +77,39 @@ En resumen:
 Si tu lector USB (como el SR-1000) ya está configurado para emular un teclado directamente (pruebas con el Bloc de Notas y los datos aparecen solos): Entonces la aplicación "Autoid Keyboard Wedge" no es necesaria para la función básica de "wedge". El lector ya lo hace.
 Si tu lector USB se instala como un puerto COM virtual y no escribe directamente en el Bloc de Notas: Entonces SÍ necesitas una aplicación como "Autoid Keyboard Wedge" para tomar los datos de ese puerto COM y convertirlos en pulsaciones de teclado.
 La aplicación que me mostraste está diseñada para tomar datos de una fuente (Ethernet o un Puerto Serial) y convertirlos en entrada de teclado. Si tu fuente USB ya es una entrada de teclado directa, esta aplicación no añade esa funcionalidad básica. Si tu fuente USB es un flujo de datos seriales (vía VCP), entonces sí la necesitas.
+
+
+
+
+-------------------------------------------------
+"Reading Test" es precisamente donde deberías poder ver los resultados de una prueba de lectura, incluyendo el dato del código de barras leído.
+Fíjate en las filas:
+Parameter bank: El banco de parámetros que se está utilizando para la prueba.
+Reading Test: Aquí se mostrará el porcentaje de éxito de las lecturas durante la prueba (actualmente 0%).
+Matching level: Nivel de coincidencia o calidad de la lectura (actualmente 0).
+Symbology: Aquí debería aparecer el tipo de código de barras leído (ej: Code 128, QR Code, DataMatrix) después de una lectura exitosa.
+cell size: El tamaño de la celda más pequeña del código.
+Code size (width): El ancho del código.
+PPC: Podría ser "Pixels Per Cell" o alguna métrica similar de calidad.
+Read Data: ¡Esta es la fila clave! Aquí es donde aparecerá el contenido alfanumérico del código de barras una vez que el escáner lo lea exitosamente durante la prueba. Actualmente está vacía porque la prueba de lectura está en 0%.
+
+![alt text](11.png)
+
+
+OTRA PRUEBA:
+LA IP QUE USO ES ESTA:
+![alt text](12.png)
+
+Esta sería la IP con la que se conectó el scaner al PC y había otra IP con la que se conectaba el internet al PC al intentar poner la IP de internet igual a la del scaner el PC se quedo sin conexión a internet.
+
+
+IMPORTANTE -> SE DESACTIVÒ EL ANTIVIRUS
+
+
+
+VIDEO EN INGLÉS MUY SIMILAR A LO QUE ESTOY HACIENDO
+https://www.youtube.com/watch?v=m7zKt9zyx7c
+
+
+Por lo que se procede a hacer otras pruebas:
+...
