@@ -113,3 +113,31 @@ https://www.youtube.com/watch?v=m7zKt9zyx7c
 
 Por lo que se procede a hacer otras pruebas:
 ...
+
+21 mayo 2025
+ESTA CONECTADO EL PC AL WIFI
+![alt text](13.png)
+
+esta era la IP del computador:
+192.168.0.105 
+
+r5yz1ueb
+
+
+---------------------------------
+Se guardó la configuración del autoid en el escritorio:
+Con esa configuración de obtuvo lo siguiente: 
+![alt text](14.png)
+
+Hércules puede ver lo que se está enviando por eternet
+![alt text](15.png)
+
+---------------------------------------------------------
+PASOS 22 MAYO
+BUSCAR UNA IP DISPONIBLE QUE AL HACER PING NO HAGA PING
+CON arp -a
+LUEGO ESA IP SE LA ASIGNO EN LA PESTAÑA DONDE SE PUEDE ASIGNAR EL GATEWAY Y TODO 
+AUNQUE HAY UN campo al final QUE ES PARA LO SIGUIENTE:
+![alt text](16.png)
+
+El número "24" que aparece al lado de la máscara de subred 255.255.255.0 es la representación de esa misma máscara de subred en notación CIDR (Classless Inter-Domain Routing), también conocida como "longitud de prefijo".
