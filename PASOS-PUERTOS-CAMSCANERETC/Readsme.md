@@ -141,3 +141,23 @@ AUNQUE HAY UN campo al final QUE ES PARA LO SIGUIENTE:
 ![alt text](16.png)
 
 El número "24" que aparece al lado de la máscara de subred 255.255.255.0 es la representación de esa misma máscara de subred en notación CIDR (Classless Inter-Domain Routing), también conocida como "longitud de prefijo".
+
+
+SE INSTALA UN SCANER PARA LAS IP
+
+
+
+------------------------------------------
+Habiendo configurado la ip del computador en la misma ip del SR 1000 estando los dos en la misma red
+
+![alt text](17.png)
+![alt text](18.png)
+
+La configuración del AutoID está en la carpeta CONFIGAUTOID
+
+
+
+
+
+
+
