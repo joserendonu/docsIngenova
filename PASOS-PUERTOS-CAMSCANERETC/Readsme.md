@@ -158,6 +158,33 @@ La configuración del AutoID está en la carpeta CONFIGAUTOID
 
 
 
+----------------------------------------
+CODIGO PYTHON PARA RECIBIR PULSOS ETERNET
+import socket
+
+# Dirección y puerto a escuchar
+UDP_IP = "0.0.0.0"      # Escucha en todas las interfaces de red
+UDP_PORT = 5505     # Puerto configurado en tu lector SR
+
+# Crear socket UDP
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # Permite reutilizar el puerto
+sock.bind((UDP_IP, UDP_PORT))
+
+print(f"Escuchando en UDP {UDP_IP}:{UDP_PORT}... (Ctrl+C para detener)")
+
+try:
+    while True:
+        data, addr = sock.recvfrom(1024)  # Espera recibir datos
+        print(f"Mensaje recibido de {addr}: {data.decode(errors='replace')}")
+except KeyboardInterrupt:
+    print("\nFinalizado por el usuario.")
+
+
+
+
+
+AVECES FALLA EL PUERTO 5505 ENTONCES TOCA EN EL ADMINISTRADOR DE TAREAS MATAR EL PROCESO QUE CONSUME EL PUERTO
 
 
 
